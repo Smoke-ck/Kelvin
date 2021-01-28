@@ -1,0 +1,37 @@
+.footer {
+    background-color: #1e1e1e;
+    &__container {
+        padding: 25px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #dadada;
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        margin-right: 15px;
+    }
+    &__click {
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #dadada;
+    }
+}
+@media(max-width:768px) {
+    .footer {
+        &__container {
+            flex-wrap: wrap;
+        }
+    }
+}

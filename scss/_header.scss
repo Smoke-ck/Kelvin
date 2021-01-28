@@ -1,0 +1,122 @@
+.header {
+    height: 770px;
+    background-image: url(../img/header/rectangle_508_11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 190px;
+    &__container {
+        overflow: hidden;
+    }
+    &__mobile {
+        display: none;
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 242px;
+    }
+    &__head-tittle {
+        font-size: 32px;
+        line-height: 60px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    &__nav {
+        align-self: center;
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        list-style-type: none;
+        margin-left: 30px;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+    &__click {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color:#222222;
+        &:hover {
+            color:#5c5c5c;
+        }
+    }
+    &__content {
+        max-width: 530px;
+    }
+    &__tittle {
+        font-size: 44px;
+        line-height: 62px;
+        font-weight: 600;
+        color: #000000;
+        max-width: 450px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #3a3a3a;
+    }
+}
+@media(max-width:767px) {
+    .header {
+        &__content {
+            padding:10px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__mobile-tittle {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+            color:#222222;
+            text-transform: uppercase;
+            &:hover {
+                color:#5c5c5c;
+            }
+        }
+        &__mobile {
+            display: block;
+            align-self: center;
+        }
+        &__mobile-link {
+            position: relative;
+        }
+        &__mobile-downlist {
+            position: absolute;
+            top:0;
+            padding-top: 20px;
+            display: none;
+        }
+        &__mobile-link:active > &__mobile-downlist,
+        &__mobile-downlist:hover {
+            display: block;
+            z-index: 2;
+        }
+        &__head {
+            margin-bottom: 100px;
+            justify-content: space-around;
+        }
+        &__tittle {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__description {
+            font-size: 15px;
+        }
+        &__click {
+            font-size: 12px;
+        }
+        &__link {
+            margin-left:0;
+        }
+    }
+}

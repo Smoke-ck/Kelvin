@@ -1,0 +1,106 @@
+.perfect {
+    background-color: #f7f7f7;
+    &__container {
+        display: flex;
+        padding: 0 15px;
+    }
+    &__aside {
+        max-width: 415px;
+        padding-top:168px;
+    }
+    &__tittle {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+        max-width: 300px;
+        margin-bottom: 70px;
+        &--other {
+            color: #ffae00;
+        }
+    }
+    &__aside-wrapper {
+        padding-left: 60px;
+    }
+    &__aside-tittle {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 26px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 37px;
+            height: 4px;
+            background-color: #000000;
+            top:50%;
+            left:-50px;
+        }
+    }
+    &__aside-description {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #666666;
+        margin-bottom: 46px;
+    }
+    &__photo {
+        position: relative;
+    }
+    &__image {
+        object-fit: contain;
+        padding-top:114px;
+        padding-left: 114px;
+        &--second {
+            position: absolute;
+            bottom: 10px;
+            left: 350px;
+        }
+        &--third {
+            position: absolute;
+            left:430px;
+            bottom: 300px;
+        }
+    }
+}
+@media(max-width:1171px) {
+    .perfect {
+        &__image {
+            &--second {
+                left:0;
+                bottom:60px;
+            }
+            &--third {
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width:767px) {
+    .perfect {
+        &__aside {
+            padding-top: 80px;
+        }
+        &__photo {
+            position: static;
+        }
+        &__image {
+            display: none;
+            &--second {
+                display: block;
+                position: static;
+                padding:0 0;
+                
+            }
+        }
+        &__container {
+            flex-direction:column;
+            align-items: center;
+        }
+    }
+}

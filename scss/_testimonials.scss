@@ -1,0 +1,70 @@
+.testimonials {
+    text-align: center;
+    &__tittle {
+        font-size: 38px;
+        line-height: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 87px;
+        position: relative;
+        z-index: 2;
+        &::before {
+            content:'“';
+            opacity: 0.25;
+            font-size: 400.3px;
+            line-height: 35px;
+            font-weight: 400;
+            color: #d6d6d6;
+            position:absolute;
+            top:90px;
+            left:50%;
+            transform: translate(-50%);
+        }
+}
+    &__description {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #252525;
+        margin-bottom: 34px;
+    }
+    &__card {
+        margin: 0 auto;
+        max-width: 140px;
+        text-align: center;
+        margin-bottom: 132px;
+    }
+    &__card-tittle {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #000000;
+       
+    }
+    &__card-description {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+    }
+    &__star {
+        font-size: 12px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #ffcc30;
+        margin-bottom: 25px;
+    }
+    &__card-photo {
+        margin-bottom: 19px;
+    }
+    &__brend {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(145px,1fr));
+        grid-column-gap:100px;
+        grid-row-gap:50px;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 118px;
+    }
+}

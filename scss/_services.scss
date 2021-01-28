@@ -1,0 +1,51 @@
+.services {
+    &__card {
+        margin-bottom: 120px;
+        padding:0 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat( auto-fill,minmax(320px, 1fr));
+        grid-column-gap:60px;
+    }
+    &__card-tittle {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #000000;
+        position: relative;
+        &::before {
+            content: url(../img/services/vector_265.png);
+            position: absolute;
+            top:-90px;
+        }
+        &--development {
+            &::before {
+                content: url(../img/services/laptop_267.png);
+            }
+        }
+        &--software {
+            &::before {
+                content: url(../img/services/graphic_design_269.png);
+            }
+        }
+    }
+    &__card-description {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #252525;
+    }
+}
+@media(max-width:767px) {
+    .services {
+        &__card{
+        text-align: center;
+        }
+    }
+}
